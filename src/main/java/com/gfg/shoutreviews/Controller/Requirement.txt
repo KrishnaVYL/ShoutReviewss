@@ -1,0 +1,54 @@
+Project 1
+
+Shout Review-----> A moview review Platform
+
+Requirements:-
+a)Search a movie by Title.
+b)Rate and add Review for a movie.
+c)Search top 5 movies By Genre.
+
+Entity:-
+Movie:{
+         --Must to have
+         Id,
+         Title,
+         genre,
+         rating,
+         <review>
+         --Good to have 
+         Release date
+         Length
+         --Nice to have 
+         Cast
+         }
+ Review:{
+         --Must to have
+         Id,
+         movieTitle,
+         rating,
+         review
+         --Good to have
+         userId,
+         createdAt,
+         }
+         
+ Entity relation: One movie can contain many reviews -->One to many Relationship.
+ 
+ APIs:
+      Admin:
+          addMovie-->POST -->Priority
+          updateMovie-->
+          deleteMovie-->
+          
+          ..movie/
+          SeacrhByTitle ->GET
+                ../movie/:title
+          AddReview ->POST
+                ../review/
+          searchByGenre->GET
+                ../genre/:genre
+                
+APIs:
+#Postman collection added in the root folder, import to use all apis.      
+ 
+ 
